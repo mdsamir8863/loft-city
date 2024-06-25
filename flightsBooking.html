@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book Your Flight</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/apple-favicon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Raleway:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="vendor/slick/slick.css" rel="stylesheet" />
+    <link href="vendor/slick/slick-theme.css" rel="stylesheet" />
+    <link
+      href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/hover-style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        background-image: url("./img/about/flightBg.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #ffffff69;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+        color: #555;
+      }
+      input,
+      select {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline-color: #00ced1;
+      }
+      button {
+        padding: 10px;
+        background-color: #00ced1;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #05b4b7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header id="header">
+      <a href="index.html" class="logo"
+        ><img src="img/logo.png" alt="logo"
+      /></a>
+      <div class="phone"><i class="fa fa-phone"></i>+1 234 567 8900</div>
+      <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+      <nav class="main-menu top-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
+          <li><a href="room.html">Apartments</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section End -->
+    <div class="container">
+      <h1>Flight Booking</h1>
+      <form>
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required />
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required />
+
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required />
+
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" />
+
+        <label for="passengers">Passengers:</label>
+        <select id="passengers" name="passengers" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+
+        <button type="submit">Book Flight</button>
+      </form>
+    </div>
+  </body>
+</html>
