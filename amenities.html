@@ -29,16 +29,23 @@
     <body>
         <!-- Header Section Start -->
         <header id="header">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+            <a href="index.html" class="logo">Travel<span style="color: white;">Mate</span></a>
             <div class="phone"><i class="fa fa-phone"></i>+1 234 567 8900</div>
             <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
             <nav class="main-menu top-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="room.html">Apartments</a></li>
                     <li class="active"><a href="amenities.html">Amenities</a></li>
-                    <li><a href="booking.html">Booking</a></li>
+                    <li>
+                        <select style="color: #00CED1; outline: none; background-color:black ;" name="services" id="services-dropdown" class="custom-select bg- border-0" onchange="location = this.value;">
+                            <option "style="color: #00CED1;" value="" disabled selected>Bookings</option>
+                            <option "style="color: #00CED1;" value="flightsBooking.html">Flights</option>
+                            <option "style="color: #00CED1;" value="room.html">Rooms</option>
+                        </select>
+                    </li>
+                    <!-- <li><a href="booking.html">Booking</a></li> -->
                     <li><a href="login.html">Login</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -130,15 +137,15 @@
                     </div>
                     <div class="col-12">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Terms</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="##">Terms</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-12">
-                        <p>Copyright &#169; <a href="##">HTML Codex</a> All Rights Reserved.</p>
-						<p>Template By <a href="##">HTML Codex</a></p>
+                        <p>Copyright &#169; <a href="##">TravelMate</a> All Rights Reserved.</p>
+						<p>Developed By <a href="##">Nazhath Fatima</a></p>
                     </div>
                 </div>
             </div>
